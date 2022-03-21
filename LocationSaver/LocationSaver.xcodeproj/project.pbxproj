@@ -14,6 +14,7 @@
 		281ACAF327E8E5E60039E9CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281ACAF127E8E5E60039E9CF /* LaunchScreen.storyboard */; };
 		281ACAFD27E8E7410039E9CF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281ACAFC27E8E7410039E9CF /* MapViewController.swift */; };
 		281ACB0027E8F0E20039E9CF /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281ACAFF27E8F0E20039E9CF /* PlacesViewController.swift */; };
+		281ACB0427E8FE430039E9CF /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281ACB0327E8FE430039E9CF /* PlaceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		281ACAF427E8E5E60039E9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		281ACAFC27E8E7410039E9CF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		281ACAFF27E8F0E20039E9CF /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		281ACB0327E8FE430039E9CF /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				281ACAF427E8E5E60039E9CF /* Info.plist */,
 				281ACAFC27E8E7410039E9CF /* MapViewController.swift */,
 				281ACAFF27E8F0E20039E9CF /* PlacesViewController.swift */,
+				281ACB0327E8FE430039E9CF /* PlaceTableViewCell.swift */,
 			);
 			path = LocationSaver;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				281ACAE727E8E5E60039E9CF /* AppDelegate.swift in Sources */,
 				281ACAFD27E8E7410039E9CF /* MapViewController.swift in Sources */,
 				281ACAE927E8E5E60039E9CF /* SceneDelegate.swift in Sources */,
+				281ACB0427E8FE430039E9CF /* PlaceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
