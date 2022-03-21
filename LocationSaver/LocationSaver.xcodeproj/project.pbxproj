@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		281ACAE727E8E5E60039E9CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281ACAE627E8E5E60039E9CF /* AppDelegate.swift */; };
 		281ACAE927E8E5E60039E9CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281ACAE827E8E5E60039E9CF /* SceneDelegate.swift */; };
-		281ACAEB27E8E5E60039E9CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281ACAEA27E8E5E60039E9CF /* ViewController.swift */; };
 		281ACAEE27E8E5E60039E9CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281ACAEC27E8E5E60039E9CF /* Main.storyboard */; };
 		281ACAF027E8E5E60039E9CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281ACAEF27E8E5E60039E9CF /* Assets.xcassets */; };
 		281ACAF327E8E5E60039E9CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281ACAF127E8E5E60039E9CF /* LaunchScreen.storyboard */; };
+		281ACAFD27E8E7410039E9CF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281ACAFC27E8E7410039E9CF /* MapViewController.swift */; };
+		281ACB0027E8F0E20039E9CF /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281ACAFF27E8F0E20039E9CF /* PlacesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		281ACAE327E8E5E60039E9CF /* LocationSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		281ACAE627E8E5E60039E9CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		281ACAE827E8E5E60039E9CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		281ACAEA27E8E5E60039E9CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		281ACAED27E8E5E60039E9CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		281ACAEF27E8E5E60039E9CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		281ACAF227E8E5E60039E9CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		281ACAF427E8E5E60039E9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281ACAFC27E8E7410039E9CF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		281ACAFF27E8F0E20039E9CF /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				281ACAE627E8E5E60039E9CF /* AppDelegate.swift */,
 				281ACAE827E8E5E60039E9CF /* SceneDelegate.swift */,
-				281ACAEA27E8E5E60039E9CF /* ViewController.swift */,
 				281ACAEC27E8E5E60039E9CF /* Main.storyboard */,
 				281ACAEF27E8E5E60039E9CF /* Assets.xcassets */,
 				281ACAF127E8E5E60039E9CF /* LaunchScreen.storyboard */,
 				281ACAF427E8E5E60039E9CF /* Info.plist */,
+				281ACAFC27E8E7410039E9CF /* MapViewController.swift */,
+				281ACAFF27E8F0E20039E9CF /* PlacesViewController.swift */,
 			);
 			path = LocationSaver;
 			sourceTree = "<group>";
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281ACAEB27E8E5E60039E9CF /* ViewController.swift in Sources */,
+				281ACB0027E8F0E20039E9CF /* PlacesViewController.swift in Sources */,
 				281ACAE727E8E5E60039E9CF /* AppDelegate.swift in Sources */,
+				281ACAFD27E8E7410039E9CF /* MapViewController.swift in Sources */,
 				281ACAE927E8E5E60039E9CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
