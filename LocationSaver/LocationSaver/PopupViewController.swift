@@ -29,6 +29,8 @@ class PopupViewController: UIViewController {
             let landmark = Landmark()
             landmark.name =  name
             landmark.desc = desc
+            landmark.lat = Places.shared.userLat
+            landmark.lon = Places.shared.userLon
             
           //  Places.shared.landmarks.append(landmark)
            

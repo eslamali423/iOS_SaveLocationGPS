@@ -12,6 +12,7 @@ class Places {
     static let shared = Places()
     
     var landmarks : Results <Landmark>!
-    
+    var userLat = 0.0
+    var userLon = 0.0
     private init () {} 
 }

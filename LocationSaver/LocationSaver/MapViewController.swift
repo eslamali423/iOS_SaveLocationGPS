@@ -46,6 +46,11 @@ extension MapViewController : CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location  = locations.last
         print(location)
+      
+        Places.shared.userLat = location?.coordinate.latitude   ?? 0.0
+        Places.shared.userLon = location?.coordinate.longitude ?? 0.0
+        
+        
         let center =  CLLocationCoordinate2D (latitude:(location?.coordinate.latitude)! , longitude: (location?.coordinate.longitude)!)
         let region = MKCoordinateRegion(center : center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         map.setRegion (region, animated: true)

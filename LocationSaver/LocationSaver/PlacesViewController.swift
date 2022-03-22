@@ -54,18 +54,28 @@ class PlacesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        openMapForPlace()
+        openMapForPlace(lat: Places.shared.landmarks[indexPath.row].lat, lon: Places.shared.landmarks[indexPath.row].lon)
+        
+    }
+    
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let landmark =  Places.shared.landmarks[indexPath.row]
+        try! realm.write {
+            realm.delete(landmark)
+            tableView.reloadData()
+    }
         
     }
     
     //MARK:- OPEN MAP
     
-    func openMapForPlace() {
+    func openMapForPlace(lat : Double, lon : Double) {
         
        
         
-        let latitude:CLLocationDegrees = 0.0
-        let longitude:CLLocationDegrees = 0.0
+        let latitude:CLLocationDegrees = lat
+        let longitude:CLLocationDegrees = lon
         
         let regionDistance:CLLocationDistance = 10000
         let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
