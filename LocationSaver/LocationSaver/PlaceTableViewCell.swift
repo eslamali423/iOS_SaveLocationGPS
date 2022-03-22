@@ -9,9 +9,10 @@ import UIKit
 
 class PlaceTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBOutlet weak var discribtionLable: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
